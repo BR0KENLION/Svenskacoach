@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Woordenlijst maken | SvenskaCoach</title>
+    <meta name="description" content="Maak een eigen Zweeds-Nederlandse woordenlijst en exporteer die als CSV-bestand voor import in SvenskaCoach.">
+    <meta name="theme-color" content="#0a3475">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Naar inhoud</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="44" height="44"><span>SvenskaCoach</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen"><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="woordenlijst.html" aria-current="page">Woordenlijst</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Voorwaarden</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container reveal">
+          <p class="eyebrow">Eigen woorden</p>
+          <h1>Maak een woordenlijst voor SvenskaCoach.</h1>
+          <p class="lead">Vul Zweedse woorden met Nederlandse vertaling in en download een CSV die je in de app kunt importeren via Contentbeheer.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container tool-layout">
+          <div class="content-panel prose reveal">
+            <h2>Exportformaat</h2>
+            <p>Alleen Zweeds en Nederlands zijn verplicht. CEFR valt terug op A1, level op 1, thema op Eigen woorden en voorbeelden vallen terug op het woord en de vertaling. Voor zelfstandige naamwoorden kun je en/ett en alle vier vormen invullen.</p>
+          </div>
+
+          <div class="content-panel tool-layout reveal">
+            <div class="toolbar">
+              <label class="field">
+                Bestandsnaam
+                <input id="filename" value="svenskacoach-eigen-woorden" autocomplete="off">
+              </label>
+              <div class="toolbar-group" aria-label="Woordenlijst acties">
+                <button class="button secondary" id="add-row" type="button">Rij toevoegen</button>
+                <button class="button secondary" id="load-example" type="button">Voorbeeld laden</button>
+                <label class="button secondary file-button">CSV importeren<input id="csv-import" type="file" accept=".csv,text/csv"></label>
+                <button class="button danger" id="clear-rows" type="button">Leegmaken</button>
+                <button class="button primary" id="download-csv" type="button">CSV downloaden</button>
+              </div>
+            </div>
+
+            <div class="status" id="tool-status" role="status">Klaar om je woordenlijst te maken.</div>
+            <p class="tool-note"><strong id="word-count">0 woorden</strong> in de lijst. De app accepteert maximaal 10.000 woorden per eigen woordenlijst.</p>
+
+            <div class="word-table-wrap">
+              <table class="word-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Zweeds</th>
+                    <th>Nederlands</th>
+                    <th>Woordsoort</th>
+                    <th>Thema</th>
+                    <th>CEFR</th>
+                    <th>Level</th>
+                    <th>Voorbeeld SV</th>
+                    <th>Voorbeeld NL</th>
+                    <th>En/ett</th>
+                    <th>Onbep. ev.</th>
+                    <th>Bep. ev.</th>
+                    <th>Onbep. mv.</th>
+                    <th>Bep. mv.</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="word-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.png" alt="" width="42" height="42"><span>SvenskaCoach</span></div>
+          <p class="footer-meta">Maak eigen content voor rustig Zweeds leren.</p>
+        </div>
+        <div class="footer-links">
+          <a href="woordenlijst.html">Woordenlijst</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Voorwaarden</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/woordenlijst.js" defer></script>
+  </body>
+</html>

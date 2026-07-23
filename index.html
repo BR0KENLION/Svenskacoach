@@ -1,46 +1,183 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home - SvenskaCoach</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><h1>🇸🇪 SvenskaCoach</h1><p>Learn Swedish. Completely Offline.</p></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Terms</a>
-<a href="faq.html">FAQ</a>
-<a href="support.html">Support</a>
-</nav>
-<div class="container">
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SvenskaCoach voor Android | Offline Zweeds leren</title>
+    <meta name="description" content="SvenskaCoach is een privacyvriendelijke Android-app voor Nederlandstaligen die Zweeds leren met woorden, verhalen, quizzen en slimme herhaling.">
+    <meta name="theme-color" content="#0a3475">
+    <meta property="og:title" content="SvenskaCoach voor Android">
+    <meta property="og:description" content="Leer Zweeds rustig en offline met 3.025 woorden, 60 verhalen, quizzen en lokale voortgang.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SvenskaCoach",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Android",
+        "description": "Offline Zweeds leren voor Nederlandstaligen met woorden, verhalen, quizzen en slimme herhaling.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Naar inhoud</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a class="brand" href="index.html" aria-label="SvenskaCoach homepage"><img src="images/logo.png" alt="" width="44" height="44"><span>SvenskaCoach</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen"><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="woordenlijst.html">Woordenlijst</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Voorwaarden</a>
+        </div>
+      </nav>
+    </header>
 
-<div class="hero">
-<div class="card">
-<h2>Privacy-first Swedish learning</h2>
-<p>SvenskaCoach is an offline language learning app designed for people who want to learn Swedish without sacrificing their privacy.</p>
-<ul>
-<li>✅ Works offline</li>
-<li>✅ No account required</li>
-<li>✅ No advertisements</li>
-<li>✅ No tracking</li>
-<li>✅ Local learning progress</li>
-<li>✅ Import your own CSV vocabulary lists</li>
-</ul>
-<a class="btn" href="privacy.html">Read Privacy Policy</a>
-</div>
-<div class="card"><h3>Coming Soon</h3><p>Google Play release<br>Content Packs<br>CSV Builder</p></div>
-</div>
-<h2>Features</h2>
-<div class="grid">
-<div class="card"><h3>Vocabulary</h3><p>Build your own word lists.</p></div>
-<div class="card"><h3>Stories</h3><p>Read Swedish texts at your level.</p></div>
-<div class="card"><h3>Grammar</h3><p>Practice grammar with exercises.</p></div>
-<div class="card"><h3>Offline</h3><p>Your data never leaves your device.</p></div>
-</div>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Android app voor Nederlandstaligen</p>
+            <h1>Leer Zweeds in je eigen tempo.</h1>
+            <p class="lead">SvenskaCoach combineert 3.025 woorden, 60 verhalen, quizzen, dagelijkse missies en slimme herhaling in een rustige app die offline werkt en je voortgang lokaal bewaart.</p>
+            <div class="actions" aria-label="Belangrijkste acties">
+              <a class="button primary" href="#download">Download voor Android</a>
+              <a class="button secondary" href="woordenlijst.html">Maak woordenlijst</a>
+              <a class="button secondary" href="#features">Bekijk functies</a>
+            </div>
+            <div class="hero-stats" aria-label="App statistieken">
+              <div class="stat"><strong>3.025</strong><span>Zweedse woorden</span></div>
+              <div class="stat"><strong>60</strong><span>Offline verhalen</span></div>
+              <div class="stat"><strong>21</strong><span>Leerapps</span></div>
+            </div>
+          </div>
+          <div class="phone-stage reveal" aria-label="SvenskaCoach telefoonvoorbeeld">
+            <div class="phone real-screen">
+              <img class="phone-image" src="images/screenshot-home-light.jpg" alt="SvenskaCoach startscherm op Android" width="415" height="900">
+            </div>
+          </div>
+        </div>
+      </section>
 
-</div>
-<footer>© 2026 SvenskaCoach • Your data stays on your device.</footer>
-</body></html>
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Functies</p>
+            <h2>Alles voor dagelijkse vooruitgang.</h2>
+            <p>Van losse woorden tot contextzinnen, verhaalbegrip en grammatica: SvenskaCoach houdt oefenen overzichtelijk en motiverend.</p>
+          </div>
+          <div class="grid cards">
+            <article class="card reveal"><div class="card-icon">Å</div><h3>Woordenschat in levels</h3><p>121 levels met Nederlandse betekenis, Zweedse voorbeeldzinnen en directe controle.</p></article>
+            <article class="card reveal"><div class="card-icon">80</div><h3>Leveltoetsen</h3><p>Ontgrendel nieuwe levels wanneer je de ingestelde score haalt en bouw stevig verder.</p></article>
+            <article class="card reveal"><div class="card-icon">S</div><h3>Slim herhalen</h3><p>Nieuwe en lastige woorden komen vanzelf terug op momenten waarop herhaling telt.</p></article>
+            <article class="card reveal"><div class="card-icon">T</div><h3>Typquiz en zinnen</h3><p>Oefen actief met typen, en/ett, naamwoordsvormen en zinnen bouwen.</p></article>
+            <article class="card reveal"><div class="card-icon">V</div><h3>Verhalen met leeshulp</h3><p>Lees 60 offline verhalen met begripvragen en Nederlandse ondersteuning.</p></article>
+            <article class="card reveal"><div class="card-icon">↧</div><h3>Exports en backups</h3><p>Maak CSV-export, JSON-backups en printbare A4-PDF's voor studie of archief.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="screenshots">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Screenshots</p>
+            <h2>Rustig overzicht, heldere voortgang.</h2>
+            <p>Een blik op de Android-app: dagelijkse missies, leerapps, studiebronnen en voortgang in dezelfde rustige visuele taal.</p>
+          </div>
+          <div class="grid gallery">
+            <figure class="screenshot reveal"><img src="images/screenshot-home-light.jpg" alt="Startscherm van SvenskaCoach met dagelijkse missies" loading="lazy" width="415" height="900"><figcaption>Vandaag</figcaption></figure>
+            <figure class="screenshot reveal"><img src="images/screenshot-leerapps-light.jpg" alt="Leerapps overzicht van SvenskaCoach" loading="lazy" width="415" height="900"><figcaption>Leerapps</figcaption></figure>
+            <figure class="screenshot reveal"><img src="images/screenshot-studie-light.jpg" alt="Studiepagina van SvenskaCoach met leerbronnen" loading="lazy" width="415" height="900"><figcaption>Studie</figcaption></figure>
+            <figure class="screenshot reveal"><img src="images/screenshot-voortgang-light.jpg" alt="Voortgangspagina van SvenskaCoach" loading="lazy" width="415" height="900"><figcaption>Voortgang</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="privacy-first">
+        <div class="container">
+          <div class="privacy-band reveal">
+            <div>
+              <p class="eyebrow">Privacy first</p>
+              <h2>Geen account. Geen tracking. Gewoon leren.</h2>
+              <p>SvenskaCoach is gebouwd rond lokale voortgang. De kernervaring werkt zonder internetverbinding en bewaart je studiegegevens op je eigen toestel.</p>
+            </div>
+            <ul class="privacy-list">
+              <li>Offline woorden, verhalen en quizzen</li>
+              <li>Lokale voortgang en persoonlijke notities</li>
+              <li>Geen advertentieprofielen of sociale login</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Roadmap</p>
+            <h2>Waar de app naartoe groeit.</h2>
+          </div>
+          <ol class="roadmap">
+            <li class="card reveal"><time>Nu</time><div><h3>Android 2.73</h3><p>Woorden, verhalen, dagelijkse missies, achievements, uitspraak, feedback en contentbeheer.</p></div></li>
+            <li class="card reveal"><time>Volgend</time><div><h3>Meer oefenroutes</h3><p>Extra thema's voor reizen, werk, zorg, gemeente, cultuur en IT.</p></div></li>
+            <li class="card reveal"><time>Later</time><div><h3>Uitgebreide import</h3><p>Nog soepeler werken met eigen woorden, verhalen en persoonlijke studieoverzichten.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Veelgestelde vragen.</h2>
+          </div>
+          <div class="faq-list reveal">
+            <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Werkt SvenskaCoach zonder internet?</button><div class="faq-answer"><p>Ja. De kernervaring, inclusief woorden, verhalen, quizzen en voortgang, werkt offline.</p></div></article>
+            <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Voor wie is de app bedoeld?</button><div class="faq-answer"><p>Voor Nederlandstaligen die Zweeds leren, van beginners tot gebruikers die regelmatige herhaling zoeken.</p></div></article>
+            <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Waar wordt mijn voortgang opgeslagen?</button><div class="faq-answer"><p>Je voortgang, notities en instellingen worden lokaal op je Android-toestel opgeslagen.</p></div></article>
+          </div>
+          <div class="actions"><a class="button secondary" href="faq.html">Alle vragen bekijken</a></div>
+        </div>
+      </section>
+
+      <section class="section alt" id="download">
+        <div class="container">
+          <div class="content-panel reveal">
+            <p class="eyebrow">Download</p>
+            <h2>SvenskaCoach voor Android.</h2>
+            <p class="lead">Publicatie via Google Play is voorbereid met een Android App Bundle. Tot de store-link beschikbaar is, kun je support gebruiken voor vragen over installatie of beschikbaarheid.</p>
+            <div class="actions">
+              <a class="button primary" href="support.html">Vraag support</a>
+              <a class="button secondary" href="privacy.html">Lees privacybeleid</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.png" alt="" width="42" height="42"><span>SvenskaCoach</span></div>
+          <p class="footer-meta">Offline Zweeds leren voor Nederlandstaligen.</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Voorwaarden</a>
+          <a href="woordenlijst.html">Woordenlijst</a>
+          <a href="faq.html">FAQ</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
